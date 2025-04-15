@@ -18,20 +18,6 @@ Esta é uma aplicação web simples desenvolvida em Node.js com o framework Expr
 
 ---
 
-## Estrutura do projeto
-
-.
-├── Dockerfile
-├── docker-compose.yml
-├── .env
-├── .dockerignore
-├── .gitignore
-├── index.js
-├── package.json
-└── yarn.lock
-
----
-
 ## Configuração
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
@@ -42,6 +28,8 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=mydb
 DATABASE_URL=postgresql://user:password@db:5432/mydb
 ```
+
+---
 
 ## Como executar
 
@@ -57,6 +45,8 @@ docker-compose up -d
 
 4. A aplicação estará disponível em: http://localhost:3000
 
+---
+
 ## Endpoints disponíveis
 
 - `GET /users` — Lista todos os usuários cadastrados.
@@ -69,11 +59,15 @@ curl -X POST http://localhost:3000/users \
   -d '{"name":"Alice"}'
 ```
 
+---
+
 ## Parar e remover containers
 
 ```bash
 docker-compose down
 ```
+
+---
 
 ## Observações
 
